@@ -1,5 +1,4 @@
-import React from 'react';
-import { Phone, Mail, MapPin, MessageCircle, Clock, ShieldCheck, ArrowUpRight } from 'lucide-react';
+import { Phone, Mail, MapPin, MessageCircle, Clock, ArrowUpRight } from 'lucide-react';
 import { BUSINESS_DATA } from '../data/businessData';
 import { ContactForm } from '../components/ContactForm';
 import { SEO } from '../components/SEO';
@@ -111,7 +110,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div className="space-y-1">
                     <span className="block text-xs uppercase tracking-wider text-stone-muted font-medium">
-                      Partner Location
+                      Office & Operations Location
                     </span>
                     <p className="text-xs font-mono text-charcoal/80 leading-relaxed">
                       {BUSINESS_DATA.exactPartnerAddress}
@@ -123,14 +122,13 @@ export const ContactPage: React.FC = () => {
                 </div>
               </div>
 
-              {/* Directory Verification Callout */}
-              <div className="p-5 bg-ivory rounded-sm border border-stone-300/80 space-y-2">
-                <div className="flex items-center gap-2 text-xs font-semibold text-charcoal">
-                  <ShieldCheck className="w-4 h-4 text-champagne-dark" />
-                  <span>Swaraj Connects Directory Status: {BUSINESS_DATA.directoryStatus}</span>
+              {/* Direct Consultation Callout */}
+              <div className="p-5 bg-ivory rounded-sm border border-stone-300/80 space-y-1.5">
+                <div className="text-xs font-semibold text-charcoal uppercase tracking-wider">
+                  Direct Contractor Consultation
                 </div>
                 <p className="text-xs text-charcoal/70 leading-relaxed font-light">
-                  Active civil contracting listing under Yusuf Musir Khan. We do not use third-party sales intermediaries.
+                  Enquiries are coordinated directly with Yusuf Musir Khan. We provide clear on-site measurements, realistic civil scheduling, and transparent execution scopes.
                 </p>
               </div>
             </div>

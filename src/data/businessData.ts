@@ -38,11 +38,6 @@ export interface BusinessData {
   telephoneUri: string;
   whatsappUri: string;
   emailUri: string;
-  directorySource1: string;
-  directorySource2: string;
-  directoryStatus: string;
-  directoryActivity: string;
-  directoryRatings: number;
   originalAboutText: string;
   positioning: string;
   supportingCopy: string;
@@ -80,11 +75,6 @@ export const BUSINESS_DATA: BusinessData = {
   telephoneUri: 'tel:+919823857050',
   whatsappUri: 'https://wa.me/919823857050',
   emailUri: 'mailto:homecareinterior111@gmail.com',
-  directorySource1: 'https://swarajconnects.com/services/provider/home-care-interior-pune-maharashtra-india-lu',
-  directorySource2: 'https://swarajconnects.com/partner/yusuf-musir-khan-rw',
-  directoryStatus: 'Verified (Swaraj Connects Directory)',
-  directoryActivity: 'Active',
-  directoryRatings: 0,
   originalAboutText:
     'Yusuf Musir Khan is a professional civil contractor providing reliable construction and property improvement services for residential and commercial projects. He specializes in building construction, renovation, civil work, and interior solutions. His services include interior work, modular kitchen installation, false ceiling, and design support to meet different customer requirements. Yusuf focuses on quality workmanship, proper planning, durable construction, and timely completion. Whether it is a new building, renovation project, or interior development, he aims to deliver practical solutions, neat finishing, and customer satisfaction through professional work and attention to detail.',
   positioning: 'Thoughtful Interiors. Reliable Execution.',
@@ -108,7 +98,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Refined, functional residential and commercial interior spaces with tactile finishes and bespoke execution.',
       longDesc:
         'Interior Work is the primary visual emphasis of Home Care Interior. Led by Yusuf Musir Khan, we deliver thoughtful interior solutions tailored to contemporary residential and commercial lifestyles. From material harmonisation to tactile wood detailing, spatial planning, and fine surface finishes, every environment is crafted with precision, durability, and practical everyday elegance.',
-      image: '/assets/images/hero_luxury_interior_1793884662439.jpg',
+      image: '/assets/images/service_interior_work.jpg',
       features: [
         'Bespoke spatial planning and functional layout optimization',
         'Refined wall finishes, architectural paneling and veneer work',
@@ -143,7 +133,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Reliable construction services for residential and commercial structures with disciplined planning and durable outcomes.',
       longDesc:
         'Comprehensive building construction services delivered with meticulous on-site civil discipline. We focus on durable foundations, structural integrity, proper material grade selection, and timely milestone progress for residential and commercial structures.',
-      image: '/assets/images/service_building_construction_1793884663590.jpg',
+      image: '/assets/images/service_building_construction.jpg',
       features: [
         'Ground-up residential and commercial structure execution',
         'Precision framework, reinforced concrete, and brickwork masonry',
@@ -174,7 +164,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Transforming and modernizing existing properties with structural care, neat finishing, and updated functionality.',
       longDesc:
         'Transforming older or under-utilized properties into renewed, contemporary spaces. Our renovation services tackle layout restructuring, surface repairs, flooring updates, and modern civil upgrades while minimizing disruption and delivering neat finishes.',
-      image: '/assets/images/service_renovation_1793884662824.jpg',
+      image: '/assets/images/service_renovation.jpg',
       features: [
         'Complete property overhaul and floor-to-ceiling upgrades',
         'Wall modifications, plaster restoration, and surface renewal',
@@ -205,7 +195,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Solid contracting, masonry, plastering, flooring, and property improvement grounded in 20+ years of expertise.',
       longDesc:
         'Reliable civil contracting lies at the heart of our 20-year history. We handle brickwork, plastering, waterproofing, floor leveling, structural alterations, and site improvement with durable materials and careful workmanship.',
-      image: '/assets/images/service_civil_work_1793884684174.jpg',
+      image: '/assets/images/service_civil_work.jpg',
       features: [
         'Precision brickwork, AAC block masonry, and structural framing',
         'External and internal plastering with laser-level accuracy',
@@ -236,7 +226,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Ergonomic, elegant kitchens configured with durable hardware, thoughtful storage, and refined finishes.',
       longDesc:
         'A kitchen should be as durable as it is beautiful. We design and install custom modular kitchens optimized for Indian cooking routines, moisture resistance, heat tolerance, and effortless everyday utility.',
-      image: '/assets/images/service_modular_kitchen_1793884663590.jpg',
+      image: '/assets/images/service_modular_kitchen.jpg',
       features: [
         'Heavy-duty BWP/BWR marine grade plywood carcase construction',
         'Soft-close telescopic channels, tandem boxes, and corner storage',
@@ -267,7 +257,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'Architectural gypsum false ceilings featuring seamless cove recesses and balanced ambient illumination.',
       longDesc:
         'Sculptural, seamless false ceilings that define room volume and provide subtle acoustic comfort. From minimal perimeter drop coves to contemporary layered gypsum geometries, we execute false ceiling work with razor-straight lines and immaculate plaster finish.',
-      image: '/assets/images/service_false_ceiling_1793884664555.jpg',
+      image: '/assets/images/service_false_ceiling.jpg',
       features: [
         'High-density branded gypsum boards with rust-proof GI channel framing',
         'Concealed ambient LED cove recesses with uniform glow distribution',
@@ -298,7 +288,7 @@ export const BUSINESS_DATA: BusinessData = {
       shortDesc: 'End-to-end site supervision, vendor alignment, procurement planning, and milestone discipline.',
       longDesc:
         'Professional oversight that coordinates contractors, material procurement, daily craftsmanship checks, and project timelines. We eliminate miscommunication, ensuring your construction or interior project stays on schedule and true to approved plans.',
-      image: '/assets/images/service_project_management_1793884685626.jpg',
+      image: '/assets/images/service_project_management.jpg',
       features: [
         'Direct on-site supervision by Yusuf Musir Khan',
         'Disciplined material procurement schedules and wastage controls',
@@ -379,8 +369,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Kondhwa, Pune',
     year: '2023',
-    image: '/assets/images/hero_luxury_interior_1793884662439.jpg',
-    caption: 'Double-height living space with travertine feature wall, custom oak slat wainscoting, and ambient architectural lighting.',
+    image: '/assets/images/service_interior_work.jpg',
+    caption: 'Double-height Indian living space with teak wood slatted paneling, Italian marble flooring, and large balcony overlooking Pune.',
   },
   {
     id: 'proj-2',
@@ -390,8 +380,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'NIBM Road, Pune',
     year: '2024',
-    image: '/assets/images/service_modular_kitchen_1793884663590.jpg',
-    caption: 'Bespoke walnut fluted island, quartz waterfall benchtop, integrated appliances, and warm task illumination.',
+    image: '/assets/images/service_modular_kitchen.jpg',
+    caption: 'Custom modular kitchen equipped for Indian cooking, marine grade BWP acrylic shutters, quartz counters, and integrated chimney.',
   },
   {
     id: 'proj-3',
@@ -401,8 +391,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Wanowrie, Pune',
     year: '2023',
-    image: '/assets/images/service_false_ceiling_1793884664555.jpg',
-    caption: 'Multi-tiered gypsum ceiling with continuous warm LED cove recesses and recessed magnetic spot tracks.',
+    image: '/assets/images/service_false_ceiling.jpg',
+    caption: 'Multi-tiered gypsum false ceiling with warm ambient LED cove recesses and recessed spotlights in an Indian luxury residence.',
   },
   {
     id: 'proj-4',
@@ -412,8 +402,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Camp, Pune',
     year: '2024',
-    image: '/assets/images/service_renovation_1793884662824.jpg',
-    caption: 'Comprehensive home renovation including timber architraves, modern open plan conversion, and fresh lime plaster.',
+    image: '/assets/images/service_renovation.jpg',
+    caption: 'Indian home renovation execution: carpenter and civil contractor installing fluted oak wall paneling and checking wall plumb.',
   },
   {
     id: 'proj-5',
@@ -423,8 +413,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Hadapsar, Pune',
     year: '2022',
-    image: '/assets/images/service_building_construction_1793884663590.jpg',
-    caption: 'Reinforced concrete framing, structural columns, safety compliance, and site execution.',
+    image: '/assets/images/service_building_construction.jpg',
+    caption: 'Indian civil construction in Pune: site engineers and contractor inspecting reinforced concrete framework and brick masonry.',
   },
   {
     id: 'proj-6',
@@ -434,8 +424,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Kondhwa, Pune',
     year: '2023',
-    image: '/assets/images/service_civil_work_1793884684174.jpg',
-    caption: 'On-site civil contracting with laser-level alignment, masonry blockwork, and concrete surface preparation.',
+    image: '/assets/images/service_civil_work.jpg',
+    caption: 'Civil contracting in Pune: skilled Indian mason laying red clay bricks with spirit level and supervised mortar joints.',
   },
   {
     id: 'proj-7',
@@ -445,8 +435,8 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'approved-portfolio',
     location: 'Pune, Maharashtra',
     year: '2024',
-    image: '/assets/images/service_project_management_1793884685626.jpg',
-    caption: 'Comprehensive site scheduling, blueprint alignment, material selection, and multi-trade coordination.',
+    image: '/assets/images/service_project_management.jpg',
+    caption: 'On-site consultation: Indian civil contractor reviewing blueprint drawings with an Indian homeowner couple in a Pune apartment.',
   },
   {
     id: 'proj-8',
@@ -456,7 +446,7 @@ export const PROJECT_GALLERY: ProjectItem[] = [
     type: 'conceptual-inspiration',
     location: 'Studio Concept',
     year: 'Inspiration',
-    image: '/assets/images/about_craftsmanship_detail_1793884684513.jpg',
-    caption: 'Conceptual joinery study: solid walnut mitred joint with champagne brass inlay and natural travertine stone.',
+    image: '/assets/images/about_craftsmanship_detail.jpg',
+    caption: 'Authentic Indian joinery craftsmanship: skilled carpenter hands hand-planing solid teak wood with delicate brass inlay.',
   },
 ];

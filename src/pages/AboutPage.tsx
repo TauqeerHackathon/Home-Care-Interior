@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShieldCheck, ArrowUpRight, Phone, MessageCircle, MapPin, CheckCircle2 } from 'lucide-react';
+import { ArrowUpRight, Phone, MessageCircle, MapPin, CheckCircle2 } from 'lucide-react';
 import { BUSINESS_DATA } from '../data/businessData';
 import { SEO } from '../components/SEO';
 
@@ -35,13 +35,13 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Metric Verification Strip */}
+      {/* Key Company Metrics */}
       <section className="bg-ivory border-y border-stone-300/80 py-8 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-stone-300">
           <div>
             <span className="text-xs uppercase tracking-widest text-stone-muted block mb-1">Established</span>
             <span className="text-4xl font-serif text-charcoal font-semibold tabular-nums">{BUSINESS_DATA.established}</span>
-            <p className="text-xs text-charcoal/60 mt-1">Verified Directory Benchmark</p>
+            <p className="text-xs text-charcoal/60 mt-1">Founded in Kondhwa, Pune</p>
           </div>
           <div className="pt-4 md:pt-0">
             <span className="text-xs uppercase tracking-widest text-stone-muted block mb-1">Experience</span>
@@ -63,9 +63,9 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="aspect-[4/5] rounded-sm overflow-hidden bg-charcoal shadow-xl border border-stone-200 relative">
                 <img
-                  src="/assets/images/about_craftsmanship_detail_1793884684513.jpg"
-                  alt="Craftsmanship and material precision"
-                  className="w-full h-full object-cover"
+                  src="/assets/images/owner_yusuf_khan.jpg"
+                  alt="Yusuf Musir Khan, Civil Contractor & Founder of Home Care Interior"
+                  className="w-full h-full object-cover object-top"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
@@ -120,55 +120,50 @@ export const AboutPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Directory Authority & Factual Records */}
+      {/* Core Execution Standards */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-ivory/60 border-t border-stone-300/80">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl mb-8">
-            <h3 className="text-2xl font-serif text-charcoal mb-2">Published Directory Verification</h3>
-            <p className="text-xs text-charcoal/70 leading-relaxed">
-              Transparency is core to our client relationships. Home Care Interior is officially indexed and verified on Swaraj Connects.
+          <div className="max-w-3xl mb-10">
+            <span className="text-xs uppercase tracking-[0.2em] text-champagne-dark font-medium block mb-2">
+              Our Professional Commitments
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-serif text-charcoal mb-3">Core Contracting Standards</h3>
+            <p className="text-xs sm:text-sm text-charcoal/70 leading-relaxed font-light">
+              Grounded in 20 years of on-site civil and interior practice in Kondhwa and greater Pune, Home Care Interior operates under four foundational principles.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-3">
-              <div className="flex items-center gap-2 text-champagne-dark text-xs uppercase tracking-wider font-semibold">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Provider Record</span>
-              </div>
-              <h4 className="text-lg font-serif text-charcoal font-medium">Home Care Interior Provider Profile</h4>
-              <p className="text-xs text-charcoal/70 leading-relaxed font-mono">
-                Status: Verified · Activity: Active · Category: Civil Contractor
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-2">
+              <span className="text-xs font-mono text-champagne-dark font-semibold">01</span>
+              <h4 className="text-base font-serif text-charcoal font-medium">Proper Planning</h4>
+              <p className="text-xs text-charcoal/70 leading-relaxed">
+                Thorough site appraisal and structural analysis to prevent misaligned expectations and budget creep.
               </p>
-              <a
-                href={BUSINESS_DATA.directorySource1}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-charcoal font-semibold hover:text-champagne-dark pt-2"
-              >
-                <span>View Official Swaraj Connects Listing</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
             </div>
 
-            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-3">
-              <div className="flex items-center gap-2 text-champagne-dark text-xs uppercase tracking-wider font-semibold">
-                <ShieldCheck className="w-4 h-4" />
-                <span>Partner Record</span>
-              </div>
-              <h4 className="text-lg font-serif text-charcoal font-medium">Yusuf Musir Khan Partner Profile</h4>
-              <p className="text-xs text-charcoal/70 leading-relaxed font-mono">
-                Location: Kondhwa, Pune, Maharashtra 411048
+            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-2">
+              <span className="text-xs font-mono text-champagne-dark font-semibold">02</span>
+              <h4 className="text-base font-serif text-charcoal font-medium">Quality Workmanship</h4>
+              <p className="text-xs text-charcoal/70 leading-relaxed">
+                Experienced civil masons, carpenters, and finishing technicians supervised directly on site.
               </p>
-              <a
-                href={BUSINESS_DATA.directorySource2}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 text-xs text-charcoal font-semibold hover:text-champagne-dark pt-2"
-              >
-                <span>View Official Partner Profile</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </a>
+            </div>
+
+            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-2">
+              <span className="text-xs font-mono text-champagne-dark font-semibold">03</span>
+              <h4 className="text-base font-serif text-charcoal font-medium">Durable Construction</h4>
+              <p className="text-xs text-charcoal/70 leading-relaxed">
+                High-grade materials, calibrated marine plywood, and disciplined civil execution built to last.
+              </p>
+            </div>
+
+            <div className="p-6 bg-white border border-stone-200 rounded-sm space-y-2">
+              <span className="text-xs font-mono text-champagne-dark font-semibold">04</span>
+              <h4 className="text-base font-serif text-charcoal font-medium">Timely Completion</h4>
+              <p className="text-xs text-charcoal/70 leading-relaxed">
+                Clear milestones and synchronized inter-trade coordination to ensure prompt, tidy handover.
+              </p>
             </div>
           </div>
         </div>

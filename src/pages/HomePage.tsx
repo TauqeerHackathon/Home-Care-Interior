@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
   ArrowUpRight,
-  ShieldCheck,
   CheckCircle,
   MapPin,
   Calendar,
@@ -27,12 +26,12 @@ export const HomePage: React.FC = () => {
       />
 
       {/* 01 — HERO */}
-      <section className="relative min-h-[92vh] flex items-center justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 bg-charcoal text-ivory overflow-hidden">
+      <section className="relative min-h-[90vh] sm:min-h-[92vh] flex items-center justify-center pt-28 sm:pt-32 pb-16 px-4 sm:px-6 lg:px-8 bg-charcoal text-ivory overflow-hidden">
         {/* Architectural Background with Contrast Scrim */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/assets/images/hero_luxury_interior_1793884662439.jpg"
-            alt="Luxury modern architectural residence interior crafted by Home Care Interior"
+            src="/assets/images/hero_indian_luxury_interior.jpg"
+            alt="Luxury modern Indian architectural residence interior crafted by Home Care Interior in Pune"
             className="w-full h-full object-cover object-center scale-105 animate-subtle-zoom"
             loading="eager"
             referrerPolicy="no-referrer"
@@ -44,28 +43,28 @@ export const HomePage: React.FC = () => {
         <div className="relative z-10 max-w-7xl mx-auto w-full">
           <div className="max-w-3xl">
             {/* Quiet metadata kicker */}
-            <div className="flex items-center gap-3 text-xs uppercase tracking-[0.22em] text-champagne mb-5">
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs uppercase tracking-[0.2em] text-champagne mb-4 sm:mb-5">
               <span>Established 2002</span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" className="text-white/30">·</span>
               <span>Kondhwa, Pune</span>
-              <span aria-hidden="true">·</span>
+              <span aria-hidden="true" className="text-white/30">·</span>
               <span>Civil Contractor</span>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-white leading-[1.1] mb-6 text-balance">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl font-serif font-normal tracking-tight text-white leading-[1.15] mb-5 sm:mb-6 text-balance break-words">
               Crafting Spaces.
               <br />
               <span className="italic font-light text-champagne-light">Creating Lasting Impressions.</span>
             </h1>
 
-            <p className="text-base sm:text-lg text-ivory/80 leading-relaxed font-light mb-10 max-w-2xl">
+            <p className="text-sm sm:text-base lg:text-lg text-ivory/80 leading-relaxed font-light mb-8 sm:mb-10 max-w-2xl">
               Interior work, renovation and construction solutions shaped by thoughtful planning, quality workmanship and attention to detail.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 sm:gap-4">
               <Link
                 to="/projects"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-champagne hover:bg-champagne-light text-charcoal text-xs font-semibold uppercase tracking-wider rounded-sm transition-all shadow-md group"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-champagne hover:bg-champagne-light text-charcoal text-xs font-semibold uppercase tracking-wider rounded-sm transition-all shadow-md group min-h-[44px]"
               >
                 <span>Explore Our Work</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -73,7 +72,7 @@ export const HomePage: React.FC = () => {
 
               <Link
                 to="/contact"
-                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-white/25 hover:bg-white/10 text-white text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors"
+                className="inline-flex items-center justify-center gap-2 px-7 py-3.5 border border-white/25 hover:bg-white/10 text-white text-xs font-semibold uppercase tracking-wider rounded-sm transition-colors min-h-[44px]"
               >
                 <span>Discuss Your Project</span>
                 <ChevronRight className="w-4 h-4 text-champagne" />
@@ -90,10 +89,10 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 03 — COMPANY HIGHLIGHTS STRIP (Adjacent to Hero) */}
-      <section className="bg-ivory border-y border-stone-200/80 py-10 px-4 sm:px-6 lg:px-8">
+      <section className="bg-ivory border-y border-stone-200/80 py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-stone-300/70 text-center">
-            <div className="pt-4 md:pt-0">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 divide-y md:divide-y-0 md:divide-x divide-stone-300/70 text-center">
+            <div className="pt-2 md:pt-0">
               <span className="block text-xs uppercase tracking-widest text-stone-muted font-medium mb-1">
                 Established
               </span>
@@ -148,11 +147,10 @@ export const HomePage: React.FC = () => {
                 "{BUSINESS_DATA.originalAboutText.slice(0, 240)}..."
               </blockquote>
 
-              <div className="pt-2 flex items-center gap-6 text-xs text-stone-muted">
-                <span className="inline-flex items-center gap-1.5 text-charcoal font-medium">
-                  <ShieldCheck className="w-4 h-4 text-champagne-dark" />
-                  <span>Swaraj Connects Verified</span>
-                </span>
+              <div className="pt-2 flex flex-wrap items-center gap-3 text-xs text-stone-muted">
+                <span className="text-charcoal font-medium">Established {BUSINESS_DATA.established}</span>
+                <span aria-hidden="true">·</span>
+                <span>{BUSINESS_DATA.experience} Years Experience</span>
                 <span aria-hidden="true">·</span>
                 <span>Kondhwa, Pune</span>
               </div>
@@ -171,8 +169,8 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-6 relative">
               <div className="aspect-[4/3] rounded-sm overflow-hidden shadow-lg border border-stone-200">
                 <img
-                  src="/assets/images/about_craftsmanship_detail_1793884684513.jpg"
-                  alt="Architectural wood joinery and natural stone detailing"
+                  src="/assets/images/about_craftsmanship_detail.jpg"
+                  alt="Authentic Indian teak wood joinery and hand-carved detailing by Home Care Interior"
                   className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                   loading="lazy"
                   referrerPolicy="no-referrer"
@@ -416,7 +414,7 @@ export const HomePage: React.FC = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6">
             {PROCESS_STEPS.map((step) => (
               <div
                 key={step.step}
@@ -446,9 +444,9 @@ export const HomePage: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="aspect-[4/5] rounded-sm overflow-hidden bg-charcoal shadow-xl border border-stone-300 relative">
                 <img
-                  src="/assets/images/service_project_management_1793884685626.jpg"
-                  alt="Yusuf Musir Khan and architectural project execution team"
-                  className="w-full h-full object-cover"
+                  src="/assets/images/owner_yusuf_khan.jpg"
+                  alt="Yusuf Musir Khan, Civil Contractor & Founder of Home Care Interior"
+                  className="w-full h-full object-cover object-top"
                   loading="lazy"
                   referrerPolicy="no-referrer"
                 />
@@ -491,8 +489,8 @@ export const HomePage: React.FC = () => {
                   </a>
                 </div>
                 <div>
-                  <span className="text-xs text-stone-muted block">Directory Profile</span>
-                  <span className="text-xs font-semibold text-charcoal">Swaraj Connects Verified</span>
+                  <span className="text-xs text-stone-muted block">Contracting Milestones</span>
+                  <span className="text-xs font-semibold text-charcoal">Est. {BUSINESS_DATA.established} · {BUSINESS_DATA.projects}</span>
                 </div>
                 <div>
                   <span className="text-xs text-stone-muted block">Base of Operations</span>
@@ -524,7 +522,7 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 10 — LOCATION & DIRECTORY CONFIRMATION */}
+      {/* 10 — LOCAL PRESENCE & ADDRESS */}
       <section className="py-20 lg:py-24 px-4 sm:px-6 lg:px-8 bg-softwhite border-t border-stone-200">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -540,7 +538,7 @@ export const HomePage: React.FC = () => {
               </p>
 
               <div className="p-5 bg-ivory rounded-sm border border-stone-200 text-xs space-y-2">
-                <p className="font-semibold text-charcoal">Official Partner Address (Directory Record):</p>
+                <p className="font-semibold text-charcoal">Official Registered Address:</p>
                 <p className="text-charcoal/80 font-mono text-[11px] leading-relaxed">
                   {BUSINESS_DATA.exactPartnerAddress}
                 </p>
